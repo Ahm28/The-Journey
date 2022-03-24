@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;800&family=Public+Sans:wght@300;400;700&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #e5e5e5;
+}
+
+.text-link {
+  color: black;
+}
+
+.text-link:hover {
+  color: blue;
+}
+
+.modal-card {
+  background: url("../../public/assets/daun.jpg") no-repeat right top;
+  background-size: 90px 90px;
+}
+
+.modal-image {
+  background: url("../../public/assets/atlas.jpg") no-repeat left top;
+  background-size: 30px;
+}
+
+.heroes {
+  background: url("../../public/assets/hero.jpg") no-repeat;
+  background-size: cover;
+  height: 500px;
+  position: relative;
+}
+
+.heroes::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0)
+  );
+  position: absolute;
+  bottom: 0;
+}
+
+.heroes-body {
+  z-index: 1;
+  position: relative;
+  padding-top: 110px;
+}
+
+.heroes-body h2 {
+  font-size: 48px;
+  font-weight: 800;
+}
+
+.bookmark {
+  position: absolute;
+  background-color: white;
+  padding: 8px;
+  right: 5px;
+  margin: 10px;
+  border-radius: 100%;
+}
+
+.detail-post,
+.profile,
+.bookmark-page,
+.add-journey,
+.journey {
+  margin-top: 100px;
+}
+
+.jorney-editor-text {
+  background-color: white;
+}
